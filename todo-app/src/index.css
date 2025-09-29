@@ -332,6 +332,7 @@ hr {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -339,9 +340,12 @@ hr {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }
@@ -420,6 +424,7 @@ input:focus-visible {
   outline: 2px solid #4f46e5;
   outline-offset: 2px;
 }
+
 @media (min-width:640px) {
   .tab-button {
     padding: 0.75rem 2rem;
@@ -446,11 +451,11 @@ input:focus-visible {
     padding: 1rem 0.5rem;
     gap: 1.5rem;
   }
-  
+
   header {
     padding: 1.5rem;
   }
-  
+
   .input-container {
     padding: 1rem;
   }
@@ -503,7 +508,10 @@ input:focus-visible {
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
   }
 
-  header, .tab-container, .todo-item, .input-container {
+  header,
+  .tab-container,
+  .todo-item,
+  .input-container {
     background: rgba(30, 41, 59, 0.95);
     border-color: rgba(71, 85, 105, 0.3);
   }
